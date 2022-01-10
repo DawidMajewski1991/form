@@ -6,20 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    
     <title>Form</title>
 </head>
 
 <body>
     <main>
+        <header class="heading">
+            <img class="heading__pic-a" src="img/form.png" alt="form">
+            <img class="heading__pic-b" src="img/rectangle.png" alt="rectangle">
+
+        </header>
         <form class="form" action="https://dev.cotenfrontend.pl" method="post">
             <p class="form__package">
                 <label for="name">Twoje imię:</label>
-                <input name="name" id="name" title="Wpisz tekst" placeholder="Wpisz imię" class="form__input">
+                <input required name="name" id="name" title="Wpisz tekst" placeholder="Wpisz imię" class="form__input">
             </p>
 
             <p class="form__package">
                 <label for="surname">Twoje nazwisko:</label>
-                <input name="surname" id="surname" title="Wpisz tekst" placeholder="Wpisz nazwisko" class="form__input">
+                <input required name="surname" id="surname" title="Wpisz tekst" placeholder="Wpisz nazwisko" class="form__input">
             </p>
 
             <p class="form__package">
