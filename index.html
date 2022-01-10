@@ -11,7 +11,7 @@
 
 <body>
     <main>
-        <form class="form">
+        <form class="form" action="https://dev.cotenfrontend.pl" method="post">
             <p class="form__package">
                 <label for="name">Twoje imię:</label>
                 <input name="name" id="name" title="Wpisz tekst" placeholder="Wpisz imię" class="form__input">
@@ -52,33 +52,33 @@
                 <legend>W jakim kraju mieszkasz?</legend>
                     <div>
                         <p class=form__package>
-                            <input type="radio" name="country" id="country" checked>
+                            <input type="radio" name="country" id="country" value="Polska" checked>
                             <label for="country">Polska</label>
                         </p>
 
                         <p class=form__package>
-                            <input type="radio" name="country" id="country">
+                            <input type="radio" name="country" id="country" value="Anglia">
                             <label for="country">Anglia</label>
                         </p>
 
                         <p class=form__package>
-                            <input type="radio" name="country" id="country">
+                            <input type="radio" name="country" id="country" value="Niemcy">
                             <label for="country">Niemcy</label>
                         </p>
                     </div>
                     <div>
                         <p class=form__package>
-                            <input type="radio" name="country" id="country">
+                            <input type="radio" name="country" id="country" value="Francja">
                             <label for="country">Francja</label>
                         </p>
 
                         <p class=form__package>
-                            <input type="radio" name="country" id="country">
+                            <input type="radio" name="country" id="country" value="Hiszpania">
                             <label for="country">Hiszpania</label>
                         </p>
 
                         <p class=form__package>
-                            <input type="radio" name="country" id="country">
+                            <input type="radio" name="country" id="country" value="Włochy">
                             <label for="country">Włochy</label>
                         </p>
                     </div>
@@ -89,12 +89,12 @@
                 <legend>Jaki jest Twój zakres wieku?</legend>
 
                 <p class="form__package form__package--flex-center">
-                    <input type="radio" name="age_range" id="age_range" checked>
+                    <input type="radio" name="age_range" id="age_range" checked value="18-50">
                     <label for="age_range">18-50</label>
                 </p>
 
                 <p class="form__package form__package--flex-center">
-                    <input type="radio" name="age_range" id="age_range">
+                    <input type="radio" name="age_range" id="age_range" value="51-100">
                     <label for="age_range">51-100</label>
                 </p>
 
@@ -103,15 +103,15 @@
             <fieldset class="form__field">
                 <legend>Jaką muzykę lubisz?</legend>
                 <p class="form__package form__package--flex-center">
-                    <input type="checkbox" name="genre" id="genre">
+                    <input type="checkbox" name="genre" id="genre" value="rock">
                     <label for="genre">Rock</label>
                 </p>
                 <p class="form__package form__package--flex-center">
-                    <input type="checkbox" name="genre" id="genre" checked>
+                    <input type="checkbox" name="genre" id="genre" value="pop" checked>
                     <label for="genre">Pop</label>
                 </p>
                 <p class="form__package form__package--flex-center">
-                    <input type="checkbox" name="genre" id="genre">
+                    <input type="checkbox" name="genre" id="genre" value="punk">
                     <label for="genre">Punk</label>
                 </p>
             </fieldset>
