@@ -5,3 +5,51 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+body {
+    background: rgb(92, 26, 105);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+    background: rgb(70, 13, 83);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: 380px;
+}
+
+.form__field {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.form__field--flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__package {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__package--flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.form__input {
+    min-width: 180px;
+}
+
+.form__textarea {
+    min-width: 170px;
+    max-width: 220px;
+    min-height: 100px;
+    max-height: 180px;
+}

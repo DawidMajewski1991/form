@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <title>Form</title>
 </head>
+
 <body>
-    
+    <main>
+        <form class="form">
+            <p class="form__package">
+                <label for="name">Twoje imię:</label>
+                <input name="name" id="name" title="Wpisz tekst" placeholder="Wpisz imię" class="form__input">
+            </p>
+
+            <p class="form__package">
+                <label for="surname">Twoje nazwisko:</label>
+                <input name="surname" id="surname" title="Wpisz tekst" placeholder="Wpisz nazwisko" class="form__input">
+            </p>
+
+            <p class="form__package">
+                <label for="age">Twój wiek:</label>
+                <input type="number" name="age" id="age" title="Ile masz lat?" value="20" min="18" max="100" class="form__input">
+            </p>
+
+            <p class="form__package">
+                <label for="pass">Hasło:</label>
+                <input type="password" name="pass" id="pass" title="Hasło" placeholder="Wpisz hasło" class="form__input">
+            </p>
+
+            <p class="form__package">
+                <label for="telephone">Numer telefonu:</label>
+                <input type="tel" name="telephone" id="telephone" title="Telefon" placeholder="Podaj numer telefonu" class="form__input">
+            </p>
+
+            <p class="form__package">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" name="email" id="email" title="E-mail" placeholder="Podaj e-mail" class="form__input">
+            </p>
+
+            <p class="form__package">
+                <label for="rate">Jak oceniasz swoj dzień?</label>
+                <input type="range" name="rate" id="rate" title="Ocena" step="1" min="1" max="10" value="8" class="form__input">
+            </p>
+
+            <fieldset class="form__field form__field--flex">
+
+                <legend>W jakim kraju mieszkasz?</legend>
+                    <div>
+                        <p class=form__package>
+                            <input type="radio" name="country" id="country" checked>
+                            <label for="country">Polska</label>
+                        </p>
+
+                        <p class=form__package>
+                            <input type="radio" name="country" id="country">
+                            <label for="country">Anglia</label>
+                        </p>
+
+                        <p class=form__package>
+                            <input type="radio" name="country" id="country">
+                            <label for="country">Niemcy</label>
+                        </p>
+                    </div>
+                    <div>
+                        <p class=form__package>
+                            <input type="radio" name="country" id="country">
+                            <label for="country">Francja</label>
+                        </p>
+
+                        <p class=form__package>
+                            <input type="radio" name="country" id="country">
+                            <label for="country">Hiszpania</label>
+                        </p>
+
+                        <p class=form__package>
+                            <input type="radio" name="country" id="country">
+                            <label for="country">Włochy</label>
+                        </p>
+                    </div>
+            </fieldset>
+
+            <fieldset class="form__field">
+
+                <legend>Jaki jest Twój zakres wieku?</legend>
+
+                <p class="form__package form__package--flex-center">
+                    <input type="radio" name="age_range" id="age_range" checked>
+                    <label for="age_range">18-50</label>
+                </p>
+
+                <p class="form__package form__package--flex-center">
+                    <input type="radio" name="age_range" id="age_range">
+                    <label for="age_range">51-100</label>
+                </p>
+
+            </fieldset>
+
+            <fieldset class="form__field">
+                <legend>Jaką muzykę lubisz?</legend>
+                <p class="form__package form__package--flex-center">
+                    <input type="checkbox" name="genre" id="genre">
+                    <label for="genre">Rock</label>
+                </p>
+                <p class="form__package form__package--flex-center">
+                    <input type="checkbox" name="genre" id="genre" checked>
+                    <label for="genre">Pop</label>
+                </p>
+                <p class="form__package form__package--flex-center">
+                    <input type="checkbox" name="genre" id="genre">
+                    <label for="genre">Punk</label>
+                </p>
+            </fieldset>
+            <fieldset class="form__field">
+                <legend>Udostępnij:</legend>
+                <p class="form__package">
+                    <label for="file"></label>
+                    <input type="file" name="file" id="file" title="Plik" class="form__input">
+                </p>
+            </fieldset> 
+                <p class="form__package">
+                    <label for="select">Wybierz odpowiedź:</label>
+                    <select name="select" id="select">
+                        <option value="user yes">Tak</option>
+                        <option value="user no">Nie</option>
+                        <option value="user do not know">Nie wiem</option>
+                    </select>
+                </p>
+                <p class="form__package">
+                    <label for="area">Wpisz tekst:</label>
+                    <textarea id="area" class="form__textarea">Twój tekst.</textarea>
+                </p>
+                <input type="submit" value="Prześlij swoje dane" title="Zatwierdź dane"></imput>
+        </form>
+    </main>
 </body>
+
 </html>
